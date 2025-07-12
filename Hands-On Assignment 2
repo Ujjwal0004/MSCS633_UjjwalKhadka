@@ -1,1 +1,5 @@
+import qrcode
+url= input("Please Enter the URL")
 
+myqr1= qrcode.make(url)
+myqr1.save("myqr1.png", scale=7)
